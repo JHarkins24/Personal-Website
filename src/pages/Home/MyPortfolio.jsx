@@ -15,12 +15,12 @@ export default function MyPortfolio() {
                     </h2>
                 </div>
                 <div>
-        <Link to= 'https://github.com/JHarkins24'>
-                    <button className="btn btn-github">
-                    <img src={"./img/github_icon.png"} alt="github" />
+        
+                    <button className="btn btn-github" onClick={() => {window.open("https://github.com/JHarkins24", "_blank")}}>
+                    <img src={"./img/github_icon.png"} alt="github"/>
             Visit My GitHub
           </button>
-        </Link>
+      
         </div>
     </div>
     <div className="portfolio--section--container">
@@ -34,23 +34,10 @@ export default function MyPortfolio() {
                         <h3 className="portfolio--section--title">{item.title}</h3>
                         <p className="text-md">{item.description}</p>
                     </div>
-                    <p className="text-sm portfolio--link">
-                {item.link}{item.url}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 20 19"
-                  fill="none"
-                >
-                  <path
-                    d="M4.66667 1.66675H18V15.0001M18 1.66675L2 17.6667L18 1.66675Z"
-                    stroke="currentColor"
-                    stroke-width="2.66667"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  />
-                </svg>
+                    <p className="text-sm portfolio--link"> 
+                      <button className="btn btn-primary" onClick={() => {window.open(item.url, "_blank")}}> 
+                      {item.link}
+                      </button>
               </p>
                 </div>
                 </div>
