@@ -5,6 +5,7 @@ import emailjs from "@emailjs/browser";
 
 
 
+
 export default function ContactMe() {
 
   const [name,setName] = useState('');
@@ -14,9 +15,9 @@ export default function ContactMe() {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const serviceId = "service_0i1v9hf";
-    const templateId = "template_kkfxvxi";
-    const publicKey = "8my8lv1TOp34m2ryx";
+    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID
+    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
   
   const templateParams = {
     from_name: name,
@@ -90,3 +91,9 @@ export default function ContactMe() {
         </form>
      </section>
 }
+
+
+
+// const serviceId = "service_0i1v9hf";
+//    const templateId = "template_kkfxvxi";
+//    const publicKey = "8my8lv1TOp34m2ryx";
