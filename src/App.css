@@ -498,14 +498,6 @@ select {
 select::-ms-expand {
   display: none;
 }
-.checkbox--label {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 10.6px;
-  flex: 1 0 0;
-  justify-content: flex-start;
-}
 input[type="checkbox"] {
   width: 21px;
   height: 21px;
@@ -538,9 +530,13 @@ input[type="checkbox"] {
   align-items: flex-start;
   gap: 42.667px;
   text-decoration: none;
+  cursor: pointer;
+  color:#000000;
 }
 .footer--items ul > li > a {
   text-decoration: none;
+  cursor: pointer;
+  color:#000000;
 }
 .footer--social--icon > ul {
   list-style: none;

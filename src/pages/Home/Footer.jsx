@@ -19,6 +19,7 @@ function Footer() {
                 duration={500}
                 to="heroSection"
                 className="text-md"
+                
               >
                 Home
               </Link>
@@ -56,7 +57,7 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="Contact"
+                to="contact"
                 className="text-md"
               >
                 Contact
@@ -69,7 +70,7 @@ function Footer() {
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="testimonial"
+                to="interests"
                 className="text-md"
               >
                 Interests
@@ -81,28 +82,7 @@ function Footer() {
           <ul>
             <li>
               <a
-                href="https://www.facebook.com/"
-                className="navbar--content"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="32"
-                  height="32"
-                  viewBox="0 0 33 33"
-                  fill="none"
-                >
-                  <path
-                    d="M22.6667 8.65479H18.6667C17.9303 8.65479 17.3333 9.25175 17.3333 9.98812V13.9881H22.6667C22.8183 13.9848 22.9621 14.0553 23.0523 14.1773C23.1424 14.2993 23.1677 14.4575 23.12 14.6015L22.1333 17.5348C22.0424 17.804 21.7908 17.986 21.5067 17.9881H17.3333V27.9881C17.3333 28.3563 17.0348 28.6548 16.6667 28.6548H13.3333C12.9651 28.6548 12.6667 28.3563 12.6667 27.9881V17.9881H10.6667C10.2985 17.9881 10 17.6896 10 17.3215V14.6548C10 14.2867 10.2985 13.9881 10.6667 13.9881H12.6667V9.98812C12.6667 7.0426 15.0545 4.65479 18 4.65479H22.6667C23.0348 4.65479 23.3333 4.95327 23.3333 5.32145V7.98812C23.3333 8.35631 23.0348 8.65479 22.6667 8.65479Z"
-                    fill="black"
-                  />
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/"
+                href="https://www.instagram.com/harkoe_/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -125,7 +105,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.twitter.com/"
+                href="https://x.com/bogo259"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -146,7 +126,7 @@ function Footer() {
             </li>
             <li>
               <a
-                href="https://www.linkedin.com/"
+                href="https://www.linkedin.com/in/joe-harkins-31977b158/"
                 className="navbar--content"
                 target="_blank"
                 rel="noreferrer"
@@ -172,50 +152,7 @@ function Footer() {
       </div>
       <hr className="divider" />
       <div className="footer--content--container">
-        <p className="footer--content">Made with 💖 by John</p>
-        <div className="footer--social--icon">
-          <ul>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Privacy_Policy"
-                className="text-sm"
-              >
-                Privacy Policy
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Terms_of_Service"
-                className="text-sm"
-              >
-                Terms of Service
-              </Link>
-            </li>
-            <li>
-              <Link
-                activeClass="navbar--active-content"
-                spy={true}
-                smooth={true}
-                offset={-70}
-                duration={500}
-                to="Cookies_Settings"
-                className="text-sm"
-              >
-                Cookies Settings
-              </Link>
-            </li>
-          </ul>
-        </div>
+        <p className="footer--content">💖 I love my girlfriend Karmyn very much 💖</p>
       </div>
     </footer>
   );

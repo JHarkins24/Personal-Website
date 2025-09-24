@@ -1,4 +1,42 @@
+import React, {useState} from "react"
+import emailjs from "@emailjs/browser";
+
+
+
+
+
 export default function ContactMe() {
+
+  const [name,setName] = useState('');
+  const [email,setEmail] = useState('');
+  const [message,setMessage] = useState('');
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    const serviceId = "service_0i1v9hf";
+    const templateId = "template_kkfxvxi";
+    const publicKey = "8my8lv1TOp34m2ryx";
+  
+  const templateParams = {
+    from_name: name,
+    from_email: email,
+    to_name: "Joe",
+    message: message,
+  }
+  emailjs.send(serviceId, templateId, templateParams, publicKey)
+  .then((response) => {
+    console.log("Email sent Successfully!", response);
+    setName('');
+    setEmail('');
+    setMessage('');
+  })
+  .catch((error) => {
+    console.error("NO EMAIL SENT HAHAHAHAHAHAHA", error)
+  });
+  }
+
+
      return <section id="contact" className="contact--section">
         <div>
             <p className="sub--title">Get in Touch</p>
@@ -7,75 +45,48 @@ export default function ContactMe() {
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti corporis illum fugiat fugit optio vitae esse eaque commodi voluptatibus?
             </p>
         </div>
-        <form className="contact--form--container">
+        <form onSubmit={handleSubmit} className="contact--form--container">
             <div className="container">
-                <label htmlFor="first-name" className="contact--label">
-                    <span className="text-md">First Name</span>
+                <label htmlFor="name" className="contact--label">
+                    <span className="text-md">Name</span>
                     <input 
                     type="text" 
                     className="contact--input"
-                    name="first-name"
-                    id="first-name"
-                    required />
-                </label>
-                <label htmlFor="last-name" className="contact--label">
-                    <span className="text-md">Last Name</span>
-                    <input 
-                    type="text" 
-                    className="contact--input"
-                    name="last-name"
-                    id="last-name"
-                    required />
-                </label>
-                <label htmlFor="email" className="contact--label">
-                    <span className="text-md">Last Name</span>
-                    <input 
-                    type="text" 
-                    className="contact--input"
-                    name="email"
-                    id="email"
-                    required />
-                </label>
-                <label htmlFor="phone-number" className="contact--label">
-                    <span className="text-md">Last Name</span>
-                    <input 
-                    type="number" 
-                    className="contact--input"
-                    name="phone-number"
-                    id="phone-number"
+                    name="name"
+                    id="name"
+                    rows="1"
+                    value={name}
+                    onChange={(e) => setName(e.target.value)}
                     required />
                 </label>
             </div>
-            <label htmlFor="email" className="contact--label">
-                    <span className="text-md">Last Name</span>
+               <label htmlFor="email" className="contact--label">
+                    <span className="text-md">Email</span>
                     <input 
                     type="text" 
                     className="contact--input"
                     name="email"
                     id="email"
+                    rows="1"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
                     required />
                 </label>
-                <label htmlFor="choode-topic" className="contact--label">
-          <span className="text-md">Choose a topic</span>
-          <select id="choose-topic" className="contact--input text-md">
-            <option>Select One...</option>
-            <option>Item 1</option>
-            <option>Item 2</option>
-            <option>Item 3</option>
-          </select>
-        </label>
-        <label htmlFor="message" className="contact--label">
-          <span className="text-md">Message</span>
-          <textarea
-            className="contact--input text-md"
-            id="message"
-            rows="8"
-            placeholder="Type your message..."
-          />
-        </label>
-        <div>
-          <button className="btn btn-primary contact--form--btn">Submit</button>
-        </div>
+                <label htmlFor="message" className="contact--label">
+                    <span className="text-md">Message</span>
+                    <textarea
+                    className="contact--input text-md"
+                    name="message"
+                    id="message"
+                    rows="8"
+                    value={message}
+                    onChange={(e) => setMessage(e.target.value)}
+                    placeholder="Type your message..."
+                    />
+                </label>
+          <div>
+          <button type="submit" className="btn btn-primary contact--form--btn">Submit</button>
+          </div>
         </form>
      </section>
 }

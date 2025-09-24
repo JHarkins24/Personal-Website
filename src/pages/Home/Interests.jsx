@@ -1,6 +1,6 @@
 import data from "../../data/index.json";
 
-export default function interestss() {
+export default function interests() {
   return (
     <section className="interests--section" id="interests">
       <div className="portfolio--container-box">

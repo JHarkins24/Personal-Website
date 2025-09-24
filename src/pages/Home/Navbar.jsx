@@ -84,20 +84,19 @@ function Navbar() {
                         smooth={true}
                         offset={-70}
                         duration={500}
-                        to="Interest"
+                        to="interests"
                         className="navbar--content"
                         >Interests</Link>
                     </li>
                 </ul>
             </div>
-            <Link
-                onClick={closeMenu}
+            <Link onClick={closeMenu}
                 activeClass="navbar--active-content"
                 spy={true}
                 smooth={true}
                 offset={-70}
                 duration={500}
-                to="Contact"
+                to="contact"
                 className="btn btn-outline-primary"
                 >Contact Me</Link>
         </nav>
