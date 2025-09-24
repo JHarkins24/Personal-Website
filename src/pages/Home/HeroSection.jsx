@@ -1,3 +1,5 @@
+import ResumeButton from "./ResumeButton";
+
 export default function HeroSection(){
     return(
         <section id= "heroSection" className="hero--section">
@@ -13,10 +15,11 @@ export default function HeroSection(){
                     please use the button below!
                 </p>
             </div>
-            <button className="btn btn-primary">Resume</button>
+                <ResumeButton />
+              {/*  <button className="btn btn-primary">Resume</button> */}
             </div>
             <div className="hero--section--img">
-                <img src="./img/hero_img.png" alt="Hero Section" />
+                <img src="./img/hero_img.jpg" alt="Hero Section" />
             </div>
         </section>
     );
