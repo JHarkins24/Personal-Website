@@ -6,6 +6,7 @@ import emailjs from "@emailjs/browser";
 
 
 
+
 export default function ContactMe() {
 
   const [name,setName] = useState('');
@@ -14,10 +15,13 @@ export default function ContactMe() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
+    //Isn't working?
 
-    const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID
-    const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
-    const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    console.log(process.env.REACT_APP_EMAILJS_PUBLIC_KEY);
+    //const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+    //const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID
+    //const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
+    
   
   const templateParams = {
     from_name: name,
