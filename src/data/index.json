@@ -4,25 +4,25 @@
         "id": "1",
         "src": "./img/product-chain-1.png",
         "title": "Front-End",
-        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus."
+        "description": "HTML, CSS, React framwork"
     },
     {
         "id": "2",
         "src": "./img/tag-1.png",
         "title": "Back-End",
-        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus."
+        "description": "Python, Java, C++, C#, Javascript, R, SQL"
     },
     {
         "id": "3",
         "src": "./img/feather-pen-2.png",
-        "title": "UI & UX Design",
-        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus."
+        "title": "Workflow, CI/CD & AI Tools",
+        "description": "Git, Jira, Jenkins, Tensorflow, Pytorch"
     },
     {
         "id": "4",
         "src": "./img/feather-pen-1.png",
-        "title": "Data Analysis & AI WorkFlow Development",
-        "description": "Lorem ipsum dolor sit amet consectetur adipiscing elit. Dolor sit amet consectetur adipiscing elit quisque faucibus."
+        "title": "Data Analysis & Visualization",
+        "description": " MS Excel, Power Bi, Tableau"
     }
 
     ],
@@ -31,8 +31,8 @@
       
       "id": "1",
       "src": "./img/placeholder-image.png",
-      "title": "Ahuse",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "title": "Android and Dragons 5th",
+      "description": "Utilizing the android mobile development platform, I led my team to create a mobile dungeons and dragons character creator. This was complete with a mobile menu to fill in the blocks of a character sheet and export it as a pdf file. This was made using Java and xml",
       "link": "View In Github",
       "url":  "https://github.com/JHarkins24/Androids-and-Dragons-5th"
 
@@ -40,15 +40,15 @@
     {
       "id": "2",
       "src": "./img/placeholder-image-1.png",
-      "title": "App Dashboard",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "title": "Cloud Keys",
+      "description": "My capstone project from my senior year at CSUCI, a completely cloud-based secure password manager. This was created using all AWS tools to facilitate a Node JS and HTML back-end. In the end I Created a webapp password locker hosted on AWS Elastic Beanstalk using an EC2 instance based on the test sim within AWS.",
       "link": "View In Github"
     },
     {
       "id": "3",
       "src": "./img/placeholder-image-2.png",
-      "title": "Easy Rentn",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique",
+      "title": "CSUCI Game Jam 2021",
+      "description": "Game Developed during the CSUCI Game Jam 2021 over a 24 hour period. The challenge was open to those who have no previous expierence developing games in unity, thus tasking us with learning unity and C++ within the framework. I developed the physics and map boundaries.",
       "link": "View In Github",
       "url": "https://github.com/JHarkins24/Operation-RollingThunder"
       
@@ -56,23 +56,21 @@
     }
   ],
 "interests": [
-    {
+     {
+      
       "id": "1",
-      "count": "5",
-      "src": "./img/avatar-image.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/Data_Science_img.png",
+      "title": "Data Science"
     },
     {
       "id": "2",
-      "count": "5",
-      "src": "./img/avatar-image-1.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/Cloud_Computing_img.png",
+      "title": "Cloud Computing"
     },
     {
       "id": "3",
-      "count": "5",
-      "src": "./img/avatar-image-2.png",
-      "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspenmdisse varius eim in eros elementum tristique"
+      "src": "./img/Cyber_Security_img.png",
+      "title": "Cybersecurity"
     }
   ]
 }

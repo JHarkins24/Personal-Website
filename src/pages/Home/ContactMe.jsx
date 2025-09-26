@@ -44,10 +44,9 @@ export default function ContactMe() {
 
      return <section id="contact" className="contact--section">
         <div>
-            <p className="sub--title">Get in Touch</p>
             <h2>Contact Me</h2>
             <p className="text-lg">
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis corrupti corporis illum fugiat fugit optio vitae esse eaque commodi voluptatibus?
+                Please reach out if you would like to get in about any employment oppurtunites or want to discuss hobbies!
             </p>
         </div>
         <form onSubmit={handleSubmit} className="contact--form--container">

@@ -103,6 +103,12 @@ h3{
   font-weight: 700;
   line-height: 34px;
 }
+h4{
+  font-size: 10px;
+  font-weight: 700;
+  line-height: 34px;
+  text-align: center;
+}
 
 /* Paragraphs text(large->small) */
 /* Body 1 */
@@ -112,7 +118,7 @@ h3{
   font-style: normal;
   font-weight: 400;
   line-height: 27px;
-}
+  }
 /* Body 2 */
 .text-md {
   color: var(--darkblue);
@@ -412,6 +418,10 @@ h3{
 .sections--heading {
   color: var(--heading-color);
 }
+.interests--section--title {
+  color: var(--heading-color);
+  
+}
 .interests--section--card {
   display: flex;
   padding: 42.6px;
@@ -422,26 +432,21 @@ h3{
   border-radius: 8px;
   border: 1.33px solid #006b6a;
 }
+.interests--section--card--content {
+  display: flex;
+  padding: 32px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 32px;
+  align-self: stretch;
+  
+}
 .interests--section--card--reviews {
   display: flex;
   align-items: flex-start;
   gap: 5.33px;
 }
-.interests--section--card--author--detail {
-  display: flex;
-  align-items: center;
-  gap: 21.3px;
-}
-.interests--author--name {
-  font-weight: 600;
-  color: var(--heading-color);
-}
-.interests--author--designation {
-  color: var(--darkblue);
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 150%;
-}
+
 /* interests Ends */
 
 .contact--section {

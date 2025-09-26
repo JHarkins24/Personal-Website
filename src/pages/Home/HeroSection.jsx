@@ -11,8 +11,7 @@ export default function HeroSection(){
                     <br />Engineer
                 </h1>
                 <p className="hero--section--description">
-                    I am a aspiring Software Engineer and Data Scientist looking for oppurtunities to grow and show my expertise. If you would like to view my resume
-                    please use the button below!
+                    I am a Los Angeles based Software Engineer with a passion for building, Shipping, and maintaining useful and meaningful products. I have 3.5 years of expierence in Data Science and Back-end Software Engineering. My goal is to one day attain the skills and expierence needed to become a full stack Software Engineer!
                 </p>
             </div>
                 <ResumeButton />
