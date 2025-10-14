@@ -330,10 +330,94 @@ h4{
   gap: 114.6px;
   grid-template-columns: repeat(2, 1fr);
 }
-.about--section--img >img {
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); /* Creates a responsive grid of at least 200px columns. */
+  gap: 200px; /* Adjust spacing between photos. */
+  padding: 16px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.photo-grid img {
+  width: 170%;
+  height: 100%;
+  object-fit: cover; /* Ensures images fill their container without distortion. */
+  cursor: pointer;
+  border-radius: 100px; /* Optional: adds rounded corners to images. */
+  transition: transform 0.2s ease-in-out;
+}
+
+.photo-grid img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover for interactivity. */
+}
+.carousel-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
   height: 100%;
+  background-color: rgba(0, 0, 0, 0.9); /* Dark, semi-transparent background. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensures the carousel is on top of other content. */
 }
+
+.carousel-container {
+  position: relative;
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.carousel-container img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 8px;
+}
+
+.carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.2);
+  color: white;
+  border: none;
+  font-size: 2rem;
+  padding: 10px 15px;
+  cursor: pointer;
+  user-select: none;
+  transition: background-color 0.2s;
+  border-radius: 50%;
+}
+
+.carousel-btn:hover {
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+.carousel-btn.prev {
+  left: 10px;
+}
+
+.carousel-btn.next {
+  right: 10px;
+}
+
+.close-btn {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+.close-btn:hover {
+  color: #ccc;
+}
+
 /* About Us Ends */
 
 /* My Portfolio Starts */
