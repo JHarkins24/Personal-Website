@@ -21,7 +21,9 @@ export default function ContactMe() {
     //const publicKey = process.env.REACT_APP_EMAILJS_PUBLIC_KEY
     //const serviceId = process.env.REACT_APP_EMAILJS_SERVICE_ID
     //const templateId = process.env.REACT_APP_EMAILJS_TEMPLATE_ID
-    
+    const serviceId = "service_0i1v9hf";
+    const templateId = "template_kkfxvxi";
+    const publicKey = "8my8lv1TOp34m2ryx";
   
   const templateParams = {
     from_name: name,
@@ -97,6 +99,6 @@ export default function ContactMe() {
 
 
 
-// const serviceId = "service_0i1v9hf";
+//    const serviceId = "service_0i1v9hf";
 //    const templateId = "template_kkfxvxi";
 //    const publicKey = "8my8lv1TOp34m2ryx";
