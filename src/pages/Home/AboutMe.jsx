@@ -61,7 +61,7 @@ export default function AboutMe( images ) {
                         I was born in Philadelphia and moved to California when I was younger, yes I did grow up watching fresh prince of bel-air. I got my passion for technology in California while Philadelphia gave me my passion for motorsports & Football <span style={{ color: 'green' }}>(Go Birds)</span>.  
                     </p>
                     <p className="hero--section--description">
-                        When I'm not developing projects, I enjoy spending my weekend's working on and tracking my car while also restoring classic games and playing super smash bros. melee.
+                        When I'm not developing projects, I enjoy spending my weekend's working on and tracking my car while also restoring classic games and competing in super smash bros. melee tournaments.
                     </p>
                 </div>
             </div>
