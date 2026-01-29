@@ -43,7 +43,7 @@
       "title": "Cloud Keys",
       "description": "My capstone project from my senior year at CSUCI, a completely cloud-based secure password manager. This was created using all AWS tools to facilitate a Node JS and HTML back-end. In the end I Created a webapp password locker hosted on AWS Elastic Beanstalk using an EC2 instance based on the test sim within AWS.",
       "link":"View In Github",
-      "url": "https://github.com/JHarkins24/CloudKeys/tree/master/CloudKeys"
+      "url": "https://github.com/JHarkins24/CloudKeys"
     },
     {
       "id": "3",
