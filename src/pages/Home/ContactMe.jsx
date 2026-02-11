@@ -48,7 +48,7 @@ export default function ContactMe() {
         <div>
             <h2>Contact Me</h2>
             <p className="text-lg">
-                Please reach out if you would like to get in about any employment oppurtunites or want to discuss hobbies!
+                Please reach out if you would like to get in contact about any employment oppurtunites or want to discuss hobbies!
             </p>
         </div>
         <form onSubmit={handleSubmit} className="contact--form--container">

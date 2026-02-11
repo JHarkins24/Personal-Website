@@ -215,7 +215,7 @@ h4{
   align-items: flex-start;
   gap: 32px; /* 32 */
   padding: 200.333px; /*removing padding extends sentence across screen */
-  max-width: 600px;
+  max-width: 600px; /* changed, remove if cause's issues with responsiveness */
 }
 .hero--section--content {
   display: flex;
@@ -338,6 +338,7 @@ h4{
   padding: 16px;
   max-width: 1200px;
   margin: auto;
+  /*added below to make photos fit better, remove if causes issues with responsiveness */
   height: auto;
   width: 100%;
   object-fit: cover;
@@ -804,10 +805,34 @@ input[type="checkbox"] {
     height: auto;
     max-width: 360px;
   }
+}
+@media (max-width: 768px) {
+  .about--section {
+    grid-template-columns: 1fr;
+    padding: 40px 20px;
+    gap: 40px;
+  }
 
-  .hero--section--content--box > button {
-    margin-top: 16px;
-    justify-content: center;
+  .photo-grid {
+    padding: 0;
+    gap: 24px;
+  }
+  .photo-grid img {
+    width: 100%;
+    border-radius: 24px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 768px) {
+  .portfolio--section {
+    padding: 40px 20px;
+    gap: 40px;
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 768px) {
+  .navbar {
+    padding: 5px 20px; /* Adjusted padding for smaller screens */
   }
 }
 
@@ -837,6 +862,7 @@ input[type="checkbox"] {
   .nav__hamburger {
     display: flex;
     z-index: 200;
+    top: 20px; /* Adjusted for better alignment on smaller screens */
   }
   .navbar--items {
     display: flex;
