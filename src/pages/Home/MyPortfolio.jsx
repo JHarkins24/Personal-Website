@@ -8,9 +8,9 @@ export default function MyPortfolio() {
         <section className="portfolio--section" id="MyPortfolio">
             <div className="portfolio--container--box">
                 <div className="portfolio--container">
-                    <h2 className="section--heading">
+                    <h1 className="skills--section--heading">
                         Portfolio
-                    </h2>
+                    </h1>
                 </div>
                 <div>
         

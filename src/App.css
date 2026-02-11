@@ -75,7 +75,7 @@ p {
   justify-content: center;
   align-items: center;
   box-shadow: 0 1px 2px 0 rgba(16, 24, 40, 0.95);
-  gap: 16px;
+  gap: 12px;
 }
 .btn-github:hover {
   text-decoration: none;
@@ -506,6 +506,7 @@ h4{
 }
 .sections--heading {
   color: var(--heading-color);
+  
 }
 .interests--section--title {
   color: var(--heading-color);
@@ -676,6 +677,7 @@ input[type="checkbox"] {
   .skills--section--heading {
     font-size: 54px;
     line-height: 70px;
+    
   }
   .skills--section--container {
     gap: 16px;
@@ -713,7 +715,7 @@ input[type="checkbox"] {
   .skills--section--container,
   .about--section,
   .portfolio--section--container,
-  .portfolio--container-box,
+  .portfolio--container--box,
   .footer--link--container,
   .footer--items > ul,
   .footer--content--container {
@@ -726,7 +728,7 @@ input[type="checkbox"] {
   .hero--section--content--box {
     align-items: center;
   }
-  .portfolio--container-box {
+  .portfolio--container--box {
     gap: 30px;
   }
   .skills--section,
@@ -747,7 +749,8 @@ input[type="checkbox"] {
   }
   .hero--section--title,
   .skills--section--heading,
-  .sections--heading {
+  .sections--heading,
+  .section--title {
     font-size: 35px;
     line-height: 40px;
   }
@@ -777,7 +780,7 @@ input[type="checkbox"] {
     grid-template-columns: 1fr;
     padding: 64px 24px;
     gap: 48px;
-    text-align: left;
+    text-align: center;
   }
 
   .hero--section--content--box {
@@ -805,12 +808,17 @@ input[type="checkbox"] {
     height: auto;
     max-width: 360px;
   }
+  .btn {
+    align-self: center;
+    width: fit-content; /* Optional: Prevents it from stretching full width */
+  }
 }
 @media (max-width: 768px) {
   .about--section {
     grid-template-columns: 1fr;
     padding: 40px 20px;
     gap: 40px;
+    text-align: center;
   }
 
   .photo-grid {
@@ -828,6 +836,56 @@ input[type="checkbox"] {
     padding: 40px 20px;
     gap: 40px;
     grid-template-columns: 1fr;
+  }
+  .portfolio--section--title {
+    text-align: center;
+  }
+  .portfolio--section--card--content {
+    text-align: center;
+  }
+  .portfolio--link {
+    align-self: center;
+    width: fit-content; /* Optional: Prevents it from stretching full width */
+  }
+  .portfolio--container--box {
+    flex-direction: column;
+    justify-content: center;
+    gap: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .btn-github {
+    padding: 8px 16px;      /* smaller padding */
+    font-size: 14px;        /* smaller text */
+    gap: 8px;               /* less space between icon + text */
+  }
+}
+@media (max-width: 768px) {
+  .interests--section {
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .interests--section--title {
+    text-align: center;
+  }
+}
+@media (max-width: 768px) {
+  .interests--section--card {
+    width: 100%;
+    height: 250px;        /* fixed equal height */
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (max-width: 768px) {
+  .interests--section--card--content {
+    align-items: center;
+    text-align: center;
+  }
+  .interests--section--title {
+    font-size: 35px;      /* was 18px */
+    line-height: 40px;
   }
 }
 @media (max-width: 768px) {
