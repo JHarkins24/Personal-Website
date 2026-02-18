@@ -672,6 +672,17 @@ input[type="checkbox"] {
     line-height: 40px;
   }
 }
+@media only screen and (max-width: 1800px) {
+  .about--section {
+    grid-template-columns: 1fr;
+  }
+  .hero--section--description {
+    grid-row: 1;
+  }
+  .carousel-container {
+   grid-row: 2;
+  }
+}
 
 @media only screen and (max-width: 1600px) {
   .skills--section--heading {
